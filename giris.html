@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="KutDEV">
+        <link rel="stylesheet" href="giris.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <title>Sağlık Güvencem</title>
+    </head>
+    <body>
+        
+        <h1 class="text-uppercase">Giriş Yap</h1>
+       <center> <input type="text" class="username" placeholder="Adınız " id="username"></center>
+       <center><input type="password" class="password" placeholder="Şifreniz" id="password"</center>
+       <center><button class="enter" onclick="enter()">Giriş Yap</button></center>
+
+    </body>
+    <script>
+        var cerenpass = "Gcgd123" ;
+        var cerenisim = "ceren";
+        var modpass = "123mehmet12";
+        var modisim = "MV";
+        var isim;
+        var pass;
+
+        function enter(){
+         isim = document.getElementById("username").value;
+         pass = document.getElementById("password").value;
+         if (pass == cerenpass && isim == cerenisim) {
+           window.location="cerensayfa.html";  
+         }
+         else if (isim==modisim && pass==modpass) {
+             window.location="modsayfa.html";
+             
+         }
+         else{
+             alert("Şifreniz Veya Adınız Yanlış Kontrol Edip Yeniden Deneyiniz Hesabınız Yoksa Ana Sayfadaki Kaydol Menüsünden Hesap Açabilirsiniz");
+         }
+        }
+    </script>
+</html>
