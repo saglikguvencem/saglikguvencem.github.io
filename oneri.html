@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oneri.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="/path/to/awdropdown.css" rel="stylesheet" >
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="sweetalert2.all.min.js"></script>
+    <title>Sağlık Güvencem</title>
+</head>
+<body>
+    <div id="veri">
+        
+        <script>
+            
+            
+            function dusuk(){
+                
+                Swal.fire({
+                  position: 'top',
+                  icon: 'info',
+                  title: 'Kilonuz Çok Düşük Sağlığınız İçin Kilo Almanız Gerekebilir Bunun İçin Bir Diyetisyene, Aile Hekimine Veya Bir Doktora Danışın.',
+                  showConfirmButton: true,
+                  confirmButtonText:"Anladım!",
+                  footer: '<a href="https://hsgm.saglik.gov.tr/tr/beslenmehareket-anasayfa">Sağlık Bakanlığı Beslenme Ve Hareket</a>'
+                    
+                })
+                            }
+                            function normal(){
+                
+                Swal.fire({
+                  position: 'top',
+                  icon: 'info',
+                  title: 'Kilo Seviyeniz Boyunuza Oranla Gayet İyi Ancak Yinede Kilo Almak Veya Vermek İstiyorsanız Lüten Bir Hekime Başvurun.',
+                  showConfirmButton: true,
+                  confirmButtonText:"Anladım!",
+                  footer: '<a href="https://hsgm.saglik.gov.tr/tr/beslenmehareket-anasayfa">Sağlık Bakanlığı Beslenme Ve Hareket</a>'
+                    
+                })
+                            }
+                            function yuksek(){
+                
+                Swal.fire({
+                  position: 'top',
+                  icon: 'info',
+                  title: 'Kilo Seviyeniz Normalin Biraz Üstünde Kilo Vermeniz Gerekebilir Sağlıklı Kilo Vermek İçin Bir Hekime Danışın.',
+                  showConfirmButton: true,
+                  confirmButtonText:"Anladım!",
+                  footer: '<a href="https://hsgm.saglik.gov.tr/tr/beslenmehareket-anasayfa">Sağlık Bakanlığı Beslenme Ve Hareket</a>'
+                    
+                })
+                            }
+                            function obez(){
+                
+                Swal.fire({
+                  position: 'top',
+                  icon: 'info',
+                  title: 'Kilo Seviyeniz Neredeyse Bir Hastalık Boyutunda Dikkatli Ve Kontrollü Bir Şekilde Kilo Vermeniz Gerekmekte Bunun İçin Bir Hekime Başvurun.',
+                  showConfirmButton: true,
+                  confirmButtonText:"Anladım!",
+                  footer: '<a href="https://hsgm.saglik.gov.tr/tr/beslenmehareket-anasayfa">Sağlık Bakanlığı Beslenme Ve Hareket</a>'
+                    
+                })
+                            }
+                            function asiri(){
+                
+                Swal.fire({
+                  position: 'top',
+                  icon: 'info',
+                  title: 'Kilo Seviyeniz Bir Hastalık Boyutunda Acilen Bir Hekime Başvurup Kontrollü Kilo Vermeniz Gerekmekte.',
+                  showConfirmButton: true,
+                  confirmButtonText:"Anladım!",
+                  footer: '<a href="https://hsgm.saglik.gov.tr/tr/beslenmehareket-anasayfa">Sağlık Bakanlığı Beslenme Ve Hareket</a>'
+                    
+                })
+                            }
+            
+        </script>
+        
+        <h1 class="text-uppercase">Öneriler</h1>
+        <h4 class="text-uppercase">VKİ Testi Sonucunuzu Girin</h4>
+        
+        <center><button class="kilobuton" onclick="dusuk()">Düşük Kilo</button></center>
+       <center><button class="kilobuton" onclick="normal()">Normal Kilo</button></center>
+       <center><button class="kilobuton" onclick="yuksek()">Yüksek Kilo</button></center>
+      <center><button class="kilobuton" onclick="obez()">Obez</button></center> 
+      <center><button class="kilobuton" onclick="asiri()">Aşırı Obez</button></center> 
+      <h4>Henüz VKİ Testi Olmadınız Mı? <a href="vki.html">Buraya Tıklayarak</a> Hemen Olabilirsiniz</h4>
+    </div>
+    
+</body>
+</html>

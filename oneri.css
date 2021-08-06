@@ -1,0 +1,71 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Montserrat;
+    background-color:#2E5FF2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+    
+ 
+ }
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+#veri h1{
+    color: #04BFAD;
+    text-align: center;
+}
+#veri h4{
+    color: #04BFAD;
+    text-align: center;
+    margin-top: 20px;
+}
+#veri .veri{
+    text-align: center;
+    margin-top: 30px;
+}
+.buton{
+    margin-top: 10px;
+}
+.secenek{
+    width: 200px;
+    text-align: center;
+}
+
+.kilobuton{
+    color: #04BFAD;
+    background-color: transparent;
+    border-radius: 2px;
+    border: #04BFAD;
+    border-color: aquamarine;
+    width: 9rem;
+    height: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    border: 2px solid;
+    transition: background-color, .5s;
+
+}
+.kilobuton:hover{
+    background-color: #304EF2;
+    color: antiquewhite;
+}
+#veri a{
+    color:#0ff0d9 ;
+}
