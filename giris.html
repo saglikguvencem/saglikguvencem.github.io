@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="KutDEV">
+        <link rel="stylesheet" href="giris.css">
+        <script src="sweetalert2.all.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+        <title>Sağlık Güvencem</title>
+    </head>
+    <body>
+        
+        <h1 class="text-uppercase">Giriş Yap</h1>
+       <center> <input type="text" class="username" placeholder="Adınız " id="username"></center>
+       <center><input style="color: #04BFAD;" type="password" class="password" placeholder="Şifreniz" id="password"</center>
+       <center><button class="enter" onclick="enter()">Giriş Yap</button></center>
+
+    </body>
+    <script>
+        var cerenpass = "Gcgd123" ;
+        var cerenisim = "Ceren";
+        var modpass = "123mehmet12";
+        var modisim = "MV";
+        var volkanisim ="Volkan";
+        var volkanpass ="123volkan";
+        var isim;
+        var pass;
+
+        function enter(){
+         isim = document.getElementById("username").value;
+         pass = document.getElementById("password").value;
+         if (pass == cerenpass && isim == cerenisim) {
+           
+           window.location="cerensayfa.html";
+             
+         }
+         else if (isim==modisim && pass==modpass) {
+             window.location="modsayfa.html";
+             
+         }
+         else if (isim==volkanisim && pass==volkanpass) {
+             window.location="volkansayfa.html";
+             
+         }
+         else{
+             
+        Swal.fire({
+        position: 'middle',
+         icon: 'error',
+        title: 'Şifreniz Veya Kullanıcı Adınız Hatalı!',
+        showConfirmButton: false,
+        timer: 2000
+})
+         }
+        }
+    </script>
+</html>

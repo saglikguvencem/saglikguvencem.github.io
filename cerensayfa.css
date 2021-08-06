@@ -1,0 +1,84 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Montserrat;
+    background-color:#2E5FF2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+ 
+ }
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+.welcome h1{
+    color: #04BFAD;
+}
+#balance h1{
+    color: #04BFAD;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 1000;
+}
+#balance h2{
+    color: #04BFAD;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 30px;
+}
+#balance h3{
+    text-align: center;
+    color: #04BFAD;
+}
+#limit h1{
+    color: a#04BFAD;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 1000;
+}
+#limit h2{
+    color: #04BFAD;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 30px;
+}
+#limit h3{
+    text-align: center;
+    color: #04BFAD;
+}
+.welcome a{
+    color:#04BFAD;
+    font-weight: 700;
+    
+}
+#kilo h1{
+    text-align: center;
+    color: #04BFAD;
+    margin-top: 20px;
+    
+}
+.veri{
+    color: #04BFAD;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.kilo{
+    text-decoration: underline;
+}
