@@ -19,6 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
+        <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
+        <meta name="appleid-signin-scope" content="name email">
+        <meta name="appleid-signin-redirect-uri" content="cerensayfa.html">
+        <meta name="appleid-signin-state" content="[STATE]">
+        <meta name="appleid-signin-nonce" content="[NONCE]">
+        <meta name="appleid-signin-use-popup" content="true"> <!-- or false defaults to false -->
+        
+        <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
         <title>Sağlık Güvencem</title>
     </head>
     <body>
@@ -27,6 +35,8 @@
        <center> <input type="text" class="username" placeholder="Adınız " id="username"></center>
        <center><input style="color: #04BFAD;" type="password" class="password" placeholder="Şifreniz" id="password"</center>
        <center><button class="enter" onclick="enter()">Giriş Yap</button></center>
+           <center><div id="appleid-signin" data-color="black" data-border="true" data-type="sign in" class="apple"></div></center>
+        <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
 
     </body>
     <script>
