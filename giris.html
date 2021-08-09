@@ -25,8 +25,10 @@
         <meta name="appleid-signin-state" content="[STATE]">
         <meta name="appleid-signin-nonce" content="[NONCE]">
         <meta name="appleid-signin-use-popup" content="true"> <!-- or false defaults to false -->
+        <meta name="google-signin-client_id" content="323773180362-tfplorvogth31avunjli3i3s4nckn6eg.apps.googleusercontent.com">
         
         <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/tr_TR/appleid.auth.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <title>Sağlık Güvencem</title>
     </head>
     <body>
@@ -62,6 +64,15 @@ function checkLoginState() {
   });
 }
   </script>
+         <script>
+      function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+  </script>
         
         <h1 class="text-uppercase">Giriş Yap</h1>
        <center> <input type="text" class="username" placeholder="Adınız " id="username"></center>
@@ -70,6 +81,8 @@ function checkLoginState() {
            <center><div id="appleid-signin" data-color="black" data-border="true" data-type="sign in" class="apple"></div></center>
            <div class="fb-login-button" onclick="checkLoginState()" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
         <div class="fb-login-button" id="fb-root"></div>
+             <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v11.0&appId=262160322095540&autoLogAppEvents=1" nonce="ZJU848VM"></script>
         <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/tr_TR/appleid.auth.js"></script>
 
