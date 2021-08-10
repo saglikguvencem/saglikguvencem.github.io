@@ -32,38 +32,8 @@
         <title>Sağlık Güvencem</title>
     </head>
     <body>
-        <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '{262160322095540}',
-        cookie     : true,
-        xfbml      : true,
-        version    : '{v11.0}'
-      });
         
-      FB.AppEvents.logPageView();   
-        
-    };
   
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "https://connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-
-
-     FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-
-function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
-  </script>
          <script>
       function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
@@ -78,7 +48,7 @@ function checkLoginState() {
     if (profile.getId()=="108830859091243702932") {
     window.location="cerensayfa.html";
   }
-}
+
    
 }
   </script>
