@@ -82,3 +82,8 @@ body {
 .kilo{
     text-decoration: underline;
 }
+.signout {
+    color: red;
+    font-weight: 700;
+    
+}
