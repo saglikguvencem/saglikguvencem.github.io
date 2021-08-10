@@ -100,3 +100,11 @@ h1 {
     width: 230px;
     margin-top: 40px;
 }
+.g-signin2{
+    height: 40px;
+    width: 230px;
+    margin-top: 40px;
+    border-radius: 3px
+    border: black;
+    font-family:Montserrat;
+}
