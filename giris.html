@@ -59,6 +59,16 @@
        <center><button class="enter" onclick="enter()">Giriş Yap</button></center>
            
              <div class="g-signin2" data-onsuccess="onSignIn"></div>
+           <center><a class="cikis" href="#" onclick="signOut();">Google Hesabımdan Çık</a></center>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+
            
 
         <script src="https://apis.google.com/js/platform.js" async defer></script>
