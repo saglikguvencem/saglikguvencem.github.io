@@ -20,24 +20,22 @@
     <title>Sağlık Güvencem</title>
 </head>
 <body>
-    ||
+    
     <script>
         function hesapla(){
             var sonuc;
-            var tansiyon-kucuk =document.getElementById("tansiyon-kucuk").value;
-				var tansiyon-buyuk =document.getElementById("tansiyon-buyuk").value;
-            if (tansiyon-kucuk <= 90 && tansiyon-kucuk >= 70 && tansiyon-buyuk <= 130 && tansiyon-buyuk >= 120) {
-                sonuc ="Tansiyon Dereceleriniz Normal";
-            }
-            else if (tansiyon-buyuk < 120 || tansiyon-kucuk < 130) {
+            var btansiyon =document.getElementById("tansiyon-buyuk").value;
+            var ktansiyon =document.getElementById("tansiyon-kucuk").value;
+            if (btansiyon < 120 || ktansiyon < 70) {
                 sonuc ="Tansiyonunuz Düşük";
             }
-            else{
+            else if (btansiyon > 130 || ktansiyon > 90 ) {
                 sonuc ="Tansiyonunuz Yüksek";
             }
+            else if (btansiyon <= 130 && btansiyon >=120 && ktansiyon <=90 && ktansiyon >=70) {
+                sonuc ="Tansiyonunuz Normal";
+            }
             document.getElementById("durum").innerHTML =sonuc;
-
-              
         }
     </script>
     <div id="baslik">
