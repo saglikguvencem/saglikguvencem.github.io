@@ -1,0 +1,36 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Montserrat;
+    background-color:#2E5FF2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+ 
+ }
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+a{
+   color: #04BFAD; 
+   text-align: center;
+}
+h1{
+    text-align: center;
+    color: #04BFAD;
+    margin-bottom: 50px;
+}
