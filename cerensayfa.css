@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    font-family: Montserrat;
+    
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color:#2E5FF2;
     font-weight: 400;
     font-size: 1.6rem;
