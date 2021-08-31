@@ -59,12 +59,12 @@ body {
 #container ul li a:hover{
     color: antiquewhite;
 }
-#baslik h1 {
+#header h1 {
     color: #04BFAD;
     text-align: center;
     margin-top: 30px;
 }
-#hakkinda p{
+#header p{
     color: #04BFAD;
     margin-top: 30px;
     font-weight: 600;
