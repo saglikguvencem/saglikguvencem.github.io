@@ -1,0 +1,76 @@
+html {
+  background-color:#2E5FF2;
+  font-family:Montserrat;
+}
+#top-menu{
+  background-color:#2851F6;
+  border-radius:0 0 30px 30px;
+  padding-left:30px;
+  
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+.icon{
+  color: #04BFAD;
+  font-size:20px;
+  background-color:#2E5FF2;
+  padding:10px;
+  border-radius:30px;
+  display:inline-block;
+  margin-bottom:30px;
+  margin-top:50px;
+}
+ul li{
+list-style:none;
+ display: inline-block;
+ margin-left:20px;
+}
+.user{
+  color: #04BFAD;
+  font-size:20px;
+  background-color:#2E5FF2;
+  padding:10px;
+  border-radius:30px;
+  display:inline-block;
+  float:right;
+  margin-right:20px;
+  margin-top:20px;
+}
+.text-uppercase{
+  text-transform:uppercase;
+}
+.welcome-text{
+  color: #04BFAD;
+  font-size:30px;
+  margin-top:20px;
+  text-align:left;
+}
+#kilo h1{
+    text-align: center;
+    color: #04BFAD;
+    margin-top: 20px;
+    
+}
+.veri{
+    color: #04BFAD;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.kilo{
+    text-decoration: underline;
+}
+#kilo{
+  margin-top:50px;
+}
+
