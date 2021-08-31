@@ -1,80 +1,76 @@
 html {
-    font-size: 10px;
+  background-color:#2E5FF2;
+  font-family:Montserrat;
 }
-
-body {
-    font-family: Montserrat;
-    background-color:#2E5FF2;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    
- 
- }
- *{
-    padding: 0;
-    margin: 0; 
-    box-sizing: border-box;
- }
- .clearfix::after {
+#top-menu{
+  background-color:#2851F6;
+  border-radius:0 0 30px 30px;
+  padding-left:30px;
+  
+}
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
 
 }
 
-.img-fluid {
-    width: 100%;
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+.icon{
+  color: #04BFAD;
+  font-size:20px;
+  background-color:#2E5FF2;
+  padding:10px;
+  border-radius:30px;
+  display:inline-block;
+  margin-bottom:30px;
+  margin-top:50px;
+}
+ul li{
+list-style:none;
+ display: inline-block;
+ margin-left:20px;
+}
+.user{
+  color: #04BFAD;
+  font-size:20px;
+  background-color:#2E5FF2;
+  padding:10px;
+  border-radius:30px;
+  display:inline-block;
+  float:right;
+  margin-right:20px;
+  margin-top:20px;
 }
 .text-uppercase{
-    text-transform: uppercase;
+  text-transform:uppercase;
 }
-#logo-box h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.4rem;
+.welcome-text{
+  color: #04BFAD;
+  font-size:30px;
+  margin-top:20px;
+  text-align:left;
+}
+#kilo h1{
+    text-align: center;
     color: #04BFAD;
+    margin-top: 20px;
+    
 }
-#container {
-    padding: 20px;
-    background-color:  #2E5FF2;
+.veri{
+    color: #04BFAD;
+    margin-top: 20px;
+    text-align: center;
+    
 }
-#container ul li  {
-    float: right;
-    padding: 0;
-    margin: 0;
+.kilo{
+    text-decoration: underline;
 }
-#container ul li {
-    letter-spacing: .2rem;
+#kilo{
+  margin-top:50px;
+}
 
-}
-#container ul li a {
-    text-decoration: none;
-    color: #04BFAD;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    transition: color .5s;
-    
-}
-#container ul li{
-    list-style: none;
-    margin-right: 20px;
-    
-    
-}
-#container ul li a:hover{
-    color: antiquewhite;
-}
-#header h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
- 
-    font-size: 4rem;
-    margin-top: 90px;
-    color: #04BFAD;
-}
-#header p{
-    font-family:  "Montserrat", sans-serif;
-    text-align: center;
-    color: #04BFAD;
-    font-weight: 600;
-}

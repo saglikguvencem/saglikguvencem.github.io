@@ -1,0 +1,29 @@
+html {
+  background-color:#2E5FF2;
+  font-family:Montserrat;
+}
+
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+.text-uppercase{
+  text-transform:uppercase;
+}
+#header h1{
+  color: #04BFAD;
+  text-align:center;
+}
+#secenek{
+  margin-top:80px;
+  
+}
+#secenek a i{
+  color: #04BFAD;
+  font-size:40px;
+}
+#secenek h5{
+  color: #04BFAD;
+  margin-bottom:20px;
+}
