@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="health.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Sağlık Güvencem</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Sağlık Güvencem</h1>
+        <h1>Sağlık Hizmetleri</h1>
+        <center><i class="fas fa-stethoscope"></i></center>
+    </div>
+    <center>
+    
+    <div id="button">
+        <button class="button" onclick="tansiyon()">Tansiyon Test Aracı</button>
+    </div>
+    <div id="button">
+        <button  class="button" onclick="alt()">ALT Test Aracı</button>
+    </div>
+    <div id="button">
+        <button class="button" onclick="insulin()">İnsülin Test Aracı</button>
+    </div>
+    <div id="button">
+        <button class="button" onclick="vki()">VKİ Hesaplama Aracı</button>
+    </div>
+    <div id="button">
+        <button class="button" onclick="oneri()">Sağlık Önerileri</button>
+    </div>
+    <div id="button">
+        <button class="button" onclick="covid()">Covid-19 Güncel Verileri</button>
+    </div>
+</center>
+<script>
+    function tansiyon(){
+        window.location="tansiyon.html";
+    }
+    function alt(){
+        window.location="alt.html";
+    }
+    function covid(){
+        window.location="covidhaber.html";
+    }
+    function insulin(){
+        window.location="insulin.html";
+    }
+    function vki(){
+        window.location="vki.html";
+    }
+    function oneri(){
+        window.location="oneri.html";
+    }
+</script>
+</body>
+</html>

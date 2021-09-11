@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vki.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Sağlık Güvencem</title>
+</head>
+<body>
+    <script>
+        function hesapla(){
+            var kilo =document.getElementById("kilo").value;
+            var boy =document.getElementById("boy").value;
+            var durum;
+            var boy2 = boy*boy;
+            var vki = kilo/boy2;
+            document.getElementById("sonuc").innerHTML =vki;
+            if (vki <= 18.5) {
+                durum ="Düşük Kilolu";
+            }
+           else if (vki <= 24.9) {
+                durum ="Normal Kilolu";
+            }
+           else if (vki <=29.9) {
+                durum ="Fazla Kilolu";
+            }
+           else if (vki <= 40) {
+                durum ="Obez";
+            }
+            else if (vki > 40) {
+                durum ="Aşırı Obez";
+            }
+            document.getElementById("durum").innerHTML =durum;
+              
+        }
+    </script>
+    <div id="vki-hesap">
+    <h1 class="text-uppercase">Vki Hesaplama</h1>
+    <center><input class="alan" type="text" id="kilo" placeholder="Kilonuz Kg"></center>
+    <center><input class="alan" type="text" id="boy" placeholder="Boyunuz M"></center>
+    <center><button class="buton" onclick="hesapla()">Hesapla!</button></center>
+    <h3 class="baslik">SONUÇLAR</h3>
+    <h3 class="bas">VKİ</h3>
+    <p class="sonuc" id="sonuc">Sonuçlar İçin Lütfen Test Olunuz</p>
+    <h3 class="bas">DURUM</h3>
+    <p class="sonuc" id="durum">Sonuçlar İçin Lütfen Test Olunuz</p>
+
+</div>
+</body>
+</html>

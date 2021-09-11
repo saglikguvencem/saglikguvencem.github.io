@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="giris.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Sağlık Güvencem</title>
+</head>
+<body>
+   
+    <script>
+        function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+      if (profile.getId()=="115388399397192549052" || profile.getId()== "114695041655370399499") {
+      window.location="modsayfa.html";
+    }
+            
+      
+  
+  if (profile.getId()=="108830859091243702932") {
+      window.location="cerensayfa.html";
+    }
+  
+  if (profile.getId()=="108167132618339694094") {
+      window.location="esrasayfa.html";
+    }
+  
+     
+  }
+    </script>
+    
+          <h1 class="text-uppercase">Giriş Yap</h1>
+         <center> <input type="text" class="username" placeholder="Adınız " id="username"></center>
+         <center><input  type="password" class="password" placeholder="Şifreniz" id="password"</center>
+         <center><button class="enter" onclick="enter()">Giriş Yap</button></center>
+        
+      
+  <script>
+    function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+    }
+  </script>
+  
+             
+  
+          <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v11.0&appId=262160322095540&autoLogAppEvents=1" nonce="ZJU848VM"></script>
+          <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/tr_TR/appleid.auth.js"></script>
+  
+      </body>
+      <script>
+          var cerenpass = "Gcgd123" ;
+          var cerenisim = "Ceren";
+          var modpass = "123mehmet12";
+          var modisim = "MV";
+          var volkanisim ="Volkan";
+          var volkanpass ="123volkan";
+          var esrapass = "esra123";
+          var esraisim = "Esra";
+          var zelihaisim ="Zeliha";
+          var zelihapass ="zeliha123";
+          var serpilisim ="Serpil";
+          var serpilpass ="2004";
+          var huseyinisim ="Hüseyin";
+          var huseyinpass ="5919";
+          var sevincisim ="Sevinç";
+          var sevincpass ="1946";
+          var gulsahisim ="Gülşah";
+          var gulsahpass ="SLBWQ5";
+          var seyfettinisim ="Seyfettin";
+          var seyfettinpass ="seyfettin123";
+          var betaisim ="BETA";
+          var betapass ="123BetaSystems"
+          var isim;
+          var pass;
+  
+          function enter(){
+           isim = document.getElementById("username").value;
+           pass = document.getElementById("password").value;
+           if (pass == cerenpass && isim == cerenisim) {
+             
+             window.location="cerensayfa.html";
+               
+           }
+           else if (isim==modisim && pass==modpass) {
+               window.location="modsayfa.html";
+               
+           }
+           else if (isim==volkanisim && pass==volkanpass) {
+               window.location="volkansayfa.html";
+               
+           }
+           else if (isim==esraisim && pass==esrapass) {
+               window.location="esrasayfa.html";
+               
+           }
+                else if (isim==zelihaisim && pass==zelihapass) {
+               window.location="zelihasayfa.html";
+               
+           }
+               else if (isim==serpilisim && pass==serpilpass) {
+               window.location="serpilsayfa.html";
+               
+           }
+              else if (isim==huseyinisim && pass==huseyinpass) {
+               window.location="huseyinsayfa.html";
+               
+           }
+               else if (isim==sevincisim && pass==sevincpass) {
+               window.location="sevincsayfa.html";
+               
+           }
+               else if (isim==gulsahisim && pass==gulsahpass) {
+               window.location="gulsahsayfa.html";
+               
+           }
+                else if (isim==seyfettinisim && pass==seyfettinpass) {
+               window.location="seyfettinsayfa.html";
+               
+           } 
+           else if (isim==betaisim && pass==betapass) {
+               window.location="userpage.html";
+               
+           } 
+           else{
+               
+          Swal.fire({
+          position: 'middle',
+           icon: 'error',
+          title: 'Şifreniz Veya Kullanıcı Adınız Hatalı!',
+          showConfirmButton: false,
+          timer: 2000
+  })
+           }
+          }
+      </script>
+</body>
+</html>

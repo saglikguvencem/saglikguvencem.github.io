@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="insulin.css">
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Sağlık Güvencem</title>
+</head>
+<body>
+    
+    <script>
+        function hesapla(){
+            var sonuc;
+            var insulin =document.getElementById("insulin").value;
+            if (insulin <= 16 && insulin >=4 ) {
+                sonuc ="İnsülin Dereceniz Normal";
+            }
+            else if (insulin < 4) {
+                sonuc ="İnsülin Dereceniz Çok Düşük Bir Doktora Başvurmanız Gerekebilir";
+            }
+            else{
+                sonuc ="İnsülin Dereceniz Çok Yüksek Bir Doktora Başvurmanız Gerekebilir";
+            }
+            document.getElementById("durum").innerHTML =sonuc;
+
+              
+        }
+    </script>
+    <div id="baslik">
+        <h1 class="text-uppercase">Açlık İnsülin Testi</h1>
+        <p>*Uyarı: İnsülin Testleri Hastanelerde Kontrol Altında Yapılmaktadır. Lütfen Test Olduktan Sonra Sonucu Aşağıya Giriniz. Ayrıca Uygulanan Test Kitine Göre Aşağıdaki Test Sonucu Farklılık Gösterebilir.</p>
+    </div>
+    <div id="insulin-hesap">
+        <center><input class="alan" type="text" id="insulin" placeholder="Açlık İnsüliniz"></center>
+        <center><button class="buton" onclick="hesapla()">Hesapla!</button></center>
+        
+        <h3 class="bas">SONUÇ</h3>
+        <p class="sonuc" id="durum">Sonuçlar İçin Lütfen Test Olunuz</p>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Montserrat;
+    background-color:#F2F2F2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+ 
+ }
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+#logo-box h1{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #262526;
+}
+ul li{
+    list-style:none;
+     display: inline-block;
+     margin-left:20px;
+     float: right;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin-right: 20px;
+    }
+    ul li a{
+        color: #262526;
+        text-decoration: none;
+    }
+    #header h1{
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        color: #262526;
+    }
+    #header{
+        margin-top: 100px;
+    }
+    #header .fas{
+        margin-top: 30px;
+        color: #262526;
+        font-size: 50px;
+    }
+    #logo-box .fas{
+        font-size: 23px;
+        color: #262526;
+    }

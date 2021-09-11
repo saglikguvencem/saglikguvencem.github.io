@@ -1,0 +1,108 @@
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Montserrat;
+    background-color:#F2F2F2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+ 
+ }
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+h1 {
+    text-align: center;
+    color: #262526;
+   
+    
+}
+
+
+.username{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top:20px ;
+    border-radius: 5px;
+    border: #565659;
+    text-align: center;
+    background-color: transparent;
+    color: #262526;
+    background-image: linear-gradient(#565659, #565659  );
+    background-position: bottom 5px center;
+    background-size: calc(100% - 10px) 2px;
+    background-repeat: no-repeat;
+    border: 0 solid;
+    padding: 10px;
+}
+.password{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top:20px ;
+    border-radius: 5px;
+    border: #565659;
+    text-align: center;
+    background-color: transparent;
+    color: #262526;
+    background-image: linear-gradient(#565659, #565659  );
+    background-position: bottom 5px center;
+    background-size: calc(100% - 10px) 2px;
+    background-repeat: no-repeat;
+    border: 0 solid;
+    padding: 10px;
+    
+}
+.enter {
+    color: #262526;
+    background-color: transparent;
+    border-radius: 2px;
+    
+    width: 9rem;
+    height: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    border: 2px solid;
+    transition: background-color, .5s;
+
+    
+}
+.enter:hover{
+    background-color: #565659;
+}
+.password::placeholder{
+    color:#262526;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.username::placeholder{
+    color: #262526;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.apple{
+    height: 40px;
+    width: 200px;
+    margin-top: 50px;
+}
+.fb-login-button{
+    height: 40px;
+    width: 230px;
+    margin-top: 40px;
+}
+

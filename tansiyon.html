@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tansiyon.css">
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Sağlık Güvencem</title>
+</head>
+<body>
+    
+    <script>
+        function hesapla(){
+            var sonuc;
+            var btansiyon =document.getElementById("tansiyon-buyuk").value;
+            var ktansiyon =document.getElementById("tansiyon-kucuk").value;
+            if (btansiyon < 120 || ktansiyon < 70) {
+                sonuc ="Tansiyonunuz Düşük";
+            }
+            else if (btansiyon > 130 || ktansiyon > 90 ) {
+                sonuc ="Tansiyonunuz Yüksek";
+            }
+            else if (btansiyon <= 130 && btansiyon >=120 && ktansiyon <=90 && ktansiyon >=70) {
+                sonuc ="Tansiyonunuz Normal";
+            }
+            document.getElementById("durum").innerHTML =sonuc;
+        }
+    </script>
+    <div id="baslik">
+        <h1 class="text-uppercase">TANSİYON TESTİ</h1>
+        <p>*Uyarı: Gençlerde ve çocuklarda tansiyonun düşük değerleri normal kabul edilebilir. Tansiyon ölçümü evinizdeki cihazlarda veya sağlık ocaklarında yapılabilir.</p>
+    </div>
+    <div id="tansiyon-hesap">
+        <center><input class="alan" type="text" id="tansiyon-kucuk" placeholder="Küçük Tansiyon "></center>
+
+			<center><input class="alan" type="text" id="tansiyon-buyuk" placeholder="Büyük Tansiyon "></center>
+        <center><button class="buton" onclick="hesapla()">Hesapla!</button></center>
+        
+        <h3 class="bas">SONUÇ</h3>
+        <p class="sonuc" id="durum">Sonuçlar İçin Lütfen Test Olunuz</p>
+    
+    </div>
+</body>
+</html>
