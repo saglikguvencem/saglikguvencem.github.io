@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="userinfo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <title>Sağlık Güvencem</title>
+</head>
+<body>
+    <section class="clearfix" id="top-menu">
+        <div id="sections">
+                  <div id=" user">
+          <a href="#"><i class="fas fa-user  user"></i></a>
+          </div>
+  
+          
+          <ul>
+      <li>
+             <div id="icon">
+        <a href="index.html"><i class="fas fa-sign-out-alt icon"></i></a>
+        </div>
+  </li>
+            
+         <li>
+             <div id="icon">
+        <a href="mehmetsayfa.html"><i class="fas fa-pager icon"></i></a>
+        </div>
+  
+            </li>
+            <li>
+              <div id="icon">
+        <a href="uyeler.html"><i class="fas fa-users icon"></i></a>
+        </div>
+  </li>
+  <li>
+    <div id="icon">
+<a href="modsayfa.html"><i class="fas fa-home icon"></i></a>
+</div>
+</li>
+                </ul>
+          
+        </div>
+        </section>
+    <div id="header">
+        <h1>Üyeler</h1>
+        
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Ceren Demirtaş</h2>
+       <center> <a href="cerensayfa.html">Kullanıcı Sayfası</a></center>
+      <center> <p id="ceren">Şifre: Gcgd123 E-Mail: gonul_ceren_guler@hotmail.com</p>
+       <button onclick="copyToClipboard1('#ceren')">Bilgilendirmeyi Kopyala</button></center>
+    <div id="uye">
+        <h2 class="text-uppercase">Volkan Demirtaş</h2>
+       <center> <a href="volkansayfa.html">Kullanıcı Sayfası</a></center>
+      <center> <p id="volkan">Şifre: 123volkan  E-Mail: vdemirtasx@yahoo.com</p>
+       <button onclick="copyToClipboard2('#volkan')">Bilgilendirmeyi Kopyala</button></center>
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Serpil Demirtaş</h2>
+       <center> <a href="serpilsayfa.html">Kullanıcı Sayfası</a></center>
+       <center><p id="serpil">Şifre: 2004 E-Mail: serpildemirtas71@gmail.com</p>
+       <button onclick="copyToClipboard3('#serpil')">Bilgilendirmeyi Kopyala</button></center>
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Hüseyin Durmaz</h2>
+       <center> <a href="huseyinsayfa.html">Kullanıcı Sayfası</a></center>
+       <center><p id="huseyin">Şifre: 5919 </p>
+       <button onclick="copyToClipboard4('#huseyin')">Bilgilendirmeyi Kopyala</button></center>
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Esra Güler</h2>
+       <center> <a href="esrasayfa.html">Kullanıcı Sayfası</a></center>
+       <center><p id="esra">Şifre: esra123 Tel No: 0 535 307 06 06</p>
+       <button onclick="copyToClipboard5('#esra')">Bilgilendirmeyi Kopyala</button></center>
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Sevinç Demirtaş</h2>
+       <center> <a href="sevincsayfa.html">Kullanıcı Sayfası</a></center>
+       <center><p id="sevinc">Şifre: 1946</p>
+       <button onclick="copyToClipboard6('#sevinc')">Bilgilendirmeyi Kopyala</button></center>
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Gülşah Tombul</h2>
+       <center> <a href="gulsahsayfa.html">Kullanıcı Sayfası</a></center>
+       <center><p id="gulsah">Şifre: SLBWQ5 E-Mail: g.ozdemirgulsah@gmail.com</p>
+       <button onclick="copyToClipboard7('#gulsah')">Bilgilendirmeyi Kopyala</button></center>
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Seyfettin Güler</h2>
+       <center> <a href="seyfettinsayfa.html">Kullanıcı Sayfası</a></center>
+       <center><p id="seyfettin">Şifre: seyfettin123 Tel No: 0 530 320 17 78 </p>
+       <button onclick="copyToClipboard8('#seyfettin')">Bilgilendirmeyi Kopyala</button></center>
+    </div>
+    <div id="uye">
+        <h2 class="text-uppercase">Zeliha Göl</h2>
+       <center> <a href="zelihasayfa.html">Kullanıcı Sayfası</a></center>
+      <center><p id="zeliha">Şifre: zeliha123 Tel No: 0 530 349 84 54</p>
+       <button onclick="copyToClipboard9('#zeliha')">Bilgilendirmeyi Kopyala</button></center> 
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+       function copyToClipboard1(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard2(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard3(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard4(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard5(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard6(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard7(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard8(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+function copyToClipboard9(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+    </script>
+</body>
+</html>
