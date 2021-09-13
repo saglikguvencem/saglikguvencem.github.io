@@ -104,7 +104,12 @@
       <center><p id="zeliha">Şifre: zeliha123 Tel No: 0 530 349 84 54</p>
        <button onclick="copyToClipboard9('#zeliha')">Bilgilendirmeyi Kopyala</button></center> 
     </div>
-    
+    <div id="uye">
+        <h2 class="text-uppercase">Melek Demirtaş</h2>
+       <center> <a href="meleksayfa.html">Kullanıcı Sayfası</a></center>
+      <center><p id="melek">Şifre: 461984 Tel No: 0 532 682 71 27</p>
+       <button onclick="copyToClipboard10('#melek')">Bilgilendirmeyi Kopyala</button></center> 
+    </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
@@ -171,6 +176,15 @@ function copyToClipboard9(element) {
   document.execCommand("copy");
   $temp.remove();
 }
+
+function copyToClipboard10(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
     </script>
 </body>
 </html>
