@@ -1,6 +1,6 @@
 var cerenpass = "Gcgd123" ;
           var cerenisim = "Ceren";
-          var modpass = "123mehmet12";
+          var modpass = "123adminlog!12";
           var modisim = "MV";
           var volkanisim ="Volkan";
           var volkanpass ="123volkan";
@@ -34,7 +34,7 @@ var cerenpass = "Gcgd123" ;
                
            }
            else if (isim==modisim && pass==modpass) {
-               window.location="modsayfa.html";
+               window.location="multi123fa.html";
                
            }
            else if (isim==volkanisim && pass==volkanpass) {
