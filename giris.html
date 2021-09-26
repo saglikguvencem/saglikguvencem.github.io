@@ -118,7 +118,13 @@
                
            }
            else if (isim==esraisim && pass==esrapass) {
-               window.location="esrasayfa.html";
+                Swal.fire({
+          position: 'middle',
+           icon: 'error',
+          title: 'Hesabınız Kapatıldı Detaylar İçin Destek Hattı İle İletişime Geçiniz',
+          showConfirmButton: false,
+          timer: 2000
+  })
                
            }
                 else if (isim==zelihaisim && pass==zelihapass) {
