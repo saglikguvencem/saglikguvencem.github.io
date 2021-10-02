@@ -114,7 +114,13 @@
                
            }
            else if (isim==volkanisim && pass==volkanpass) {
-               window.location="volkansayfa.html";
+                 Swal.fire({
+          position: 'middle',
+           icon: 'error',
+          title: 'Hesabınız Kapatılmıştır Detaylı Bilgi İçin Destek Hattı İle İletişime Geçiniz',
+          showConfirmButton: false,
+          timer: 2000
+  })
                
            }
            else if (isim==esraisim && pass==esrapass) {
