@@ -1,0 +1,56 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Montserrat;
+    background-color:#F2F2F2;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+ 
+ }
+ *{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+ }
+ .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+#header h1{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #262526;
+}
+#header{
+    margin-top: 50px;
+}
+.fas{
+    margin-top: 30px;
+    color: #262526;
+    font-size: 50px;
+}
+.button{
+    width: 150px;
+    margin-top:30px;
+    border-radius: 3px;
+    height: 40px;
+    border:2px solid #262526;
+    background-color: transparent;
+    color: #262526;
+    font-family: "Poppins", sans-serif;
+    transition: all .6s;
+
+}
+.button:hover{
+    background-color: #262526;
+    color: #F2F2F2;
+}
