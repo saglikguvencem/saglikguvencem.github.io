@@ -119,9 +119,15 @@
     </div>
      <div id="uye">
         <h2 class="text-uppercase">Evrim Ünlü</h2>
-       <center> <a href="sayfa.html">Kullanıcı Sayfası</a></center>
+       <center> <a href="evrimsayfa.html">Kullanıcı Sayfası</a></center>
       <center><p id="evrim">Şifre: 310231 E-Mail: eozgenk@hotmail.com</p>
        <button onclick="copyToClipboard11('#evrim')">Bilgilendirmeyi Kopyala</button></center> 
+    </div>
+        <div id="uye">
+        <h2 class="text-uppercase">Evrim Ünlü</h2>
+       <center> <a href="sevgisayfa.html">Kullanıcı Sayfası</a></center>
+      <center><p id="sevgi">Şifre: sevgi123 Tel No: 0 532 563 68 18</p>
+       <button onclick="copyToClipboard12('#sevgi')">Bilgilendirmeyi Kopyala</button></center> 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
@@ -204,6 +210,12 @@ function copyToClipboard10(element) {
   document.execCommand("copy");
   $temp.remove();
 }
+        function copyToClipboard12(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
 
     </script>
 </body>
