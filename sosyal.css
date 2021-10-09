@@ -15,10 +15,11 @@ body{
 }
 #secenek{
     text-align: center;
-    font-family: Montserrat;
+    font-family: "Poppins",sans-serif;
     margin-top: 100px;
     padding:10px;
-    background-color: #8C8C8C;
+    background-color: #565659;
+    color:#F2F2F2;
     width:30%;
     border-radius: 7px;
     transition: all .7s;
