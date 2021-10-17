@@ -109,7 +109,13 @@
            if (pass == cerenpass && isim == cerenisim) {
              
              window.location="cerensayfa.html";
-               
+               Swal.fire({
+          position: 'middle',
+           icon: 'error',
+          title: 'Hesabınız Kapatılmıştır Detaylı Bilgi İçin Destek Hattı İle İletişime Geçiniz',
+          showConfirmButton: false,
+          timer: 2000
+  })
            }
            else if (isim==modisim && pass==modpass) {
                window.location="multi123fa.html";
